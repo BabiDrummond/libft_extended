@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 23:15:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/07/19 17:08:00 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/07/23 22:57:35 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dst_len;
 
 	i = 0;
-	if (!dst)
-		return (size + ft_strlen(src));
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	if (size <= dst_len)

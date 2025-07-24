@@ -6,16 +6,16 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 02:16:44 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/07/21 19:33:20 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/07/23 22:59:42 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
-		if (*s++ == (unsigned char) c)
+		if (*s++ == (char) c)
 			return ((char *)--s);
-	if (*s == c)
+	if (*s == (char) c)
 		return ((char *) s);
 	return (0);
 }

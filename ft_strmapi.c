@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:52:18 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/07/19 14:33:16 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/07/23 22:57:02 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = -1;
 	result = ft_calloc(ft_strlen(s) + 1, sizeof(char));
+	if (!result)
+		return (NULL);
 	while (s[++i])
 		result[i] = (*f)((unsigned int)i, (char)s[i]);
 	return (result);

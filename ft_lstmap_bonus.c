@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:53:12 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/07/21 17:02:02 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/07/23 22:54:53 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !f || !del)
 		return (NULL);
-	head = ft_lstnew((*f)(lst->content));
-	if (!head)
-		return (NULL);
-	lst = lst->next;
+	head = NULL;
 	while (lst)
 	{
 		node = ft_lstnew((*f)(lst->content));
