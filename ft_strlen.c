@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:02:41 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/07/13 01:31:05 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/07/25 17:14:05 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while (*s++)
+	while (s[len])
 		len++;
 	return (len);
 }
