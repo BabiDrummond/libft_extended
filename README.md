@@ -4,18 +4,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Project Overview](#project-overview)  
-2. [Implemented Functions](#implemented-functions)  
-3. [Usage](#usage)  
-4. [Build Instructions](#build-instructions)  
-5. [Code Style & Norm](#code-style--norm)  
-6. [Contributing](#contributing)  
-7. [Author](#author)
-
----
-
 ## Project Overview
 
 - **Goal**: Re-create common C library functions and build them into a static library `libft.a`, to be used later in 42 projects.  
@@ -83,12 +71,6 @@ Include header in your source:
 - Conforms to 42’s **Norminette** (coding style norms).  
 - All functions are prefixed with `ft_`.  
 - No forbidden functions, no memory leaks.
-
----
-
-## Contributing
-
-This is a personal project for learning—feel free to suggest improvements or report issues. Contributions are welcome (via PR or issue).
 
 ---
 
