@@ -40,7 +40,6 @@ SRCS = char/ft_isalnum.c	\
 	mem/ft_memset.c			\
 	printf/ft_printf.c		\
 	printf/ft_put.c			\
-	printf/ft_utils.c		\
 	str/ft_split.c			\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\
