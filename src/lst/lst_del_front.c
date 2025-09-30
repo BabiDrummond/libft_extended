@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   lst_del_front.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/19 14:50:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 02:02:12 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/09/30 02:13:35 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-void	ft_lstadd_front(t_list **head, t_list *new)
+void	*lst_del_front(t_list **head, void (*del)(void *))
 {
-	if (!head || !new)
+	t_list *temp;
+
+	if (!head || !*head)
 		return ;
-	new->next = *head;
-	*head = new;
+	temp = *head;
+	*head = (*head)->next;
+	ft_lstdelone(temp, (del));
 }
