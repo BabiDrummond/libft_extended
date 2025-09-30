@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 18:38:55 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:35:24 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/09/30 03:14:34 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static char	*read_buffer(char *buffer, int fd)
 		bytes = read(fd, temp, BUFFER_SIZE);
 		if (bytes == -1)
 			return (free(buffer), free(temp), NULL);
-		temp[bytes] = '\0'; 
+		temp[bytes] = '\0';
 		buffer = ft_strjoin_free(buffer, temp);
 		if (!buffer)
 			return (free(buffer), free(temp), NULL);
