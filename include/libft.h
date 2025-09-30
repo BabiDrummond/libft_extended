@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 21:51:12 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/09/30 03:11:22 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,12 @@ int		ft_put_s(char *s);
 int		ft_put_n(int n, char *set, int base);
 int		ft_putul(unsigned long n, char *set, int base);
 int		ft_putptr(unsigned long p);
+
+// Sort
+int		*bubble_sort_arr(int *arr, int size);
+int		*selection_sort_arr(int *arr, int size);
+int		*insertion_sort_arr(int *arr, int size);
+void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *));
 
 // String
 char	**ft_split(const char *s, char c);
