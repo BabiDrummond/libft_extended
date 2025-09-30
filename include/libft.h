@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 03:11:22 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/09/30 03:44:38 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,12 @@ char	*get_next_line(int fd);
 
 // IO
 void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 // List
+void	lst_del_front(t_list **head, void (*del)(void *));
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
@@ -58,8 +59,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 
 // Math
-int		count_digits(int n, int base);
 int		count_digits_ul(unsigned long n, int base);
+int		count_digits(int n, int base);
 int		ft_atoi(const char *nptr);
 char	*ft_itoa_base(int n, int base, char *set);
 char	*ft_itoa(int n);
@@ -74,9 +75,9 @@ void	*ft_memset(void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // Printft
-int		ft_printf(const char *s, ...);
 int		check_case(char *set, char c);
 int		put_case(char c, va_list args);
+int		ft_printf(const char *s, ...);
 int		ft_putchr(int c);
 int		ft_put_s(char *s);
 int		ft_put_n(int n, char *set, int base);
@@ -85,8 +86,8 @@ int		ft_putptr(unsigned long p);
 
 // Sort
 int		*bubble_sort_arr(int *arr, int size);
-int		*selection_sort_arr(int *arr, int size);
 int		*insertion_sort_arr(int *arr, int size);
+int		*selection_sort_arr(int *arr, int size);
 void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *));
 
 // String
