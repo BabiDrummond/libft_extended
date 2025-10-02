@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 03:29:48 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:49:14 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ void	lst_del_front(t_list **head, void (*del)(void *))
 		return ;
 	temp = *head;
 	*head = (*head)->next;
-	ft_lstdelone(temp, (*del));
+	lst_del_node(temp, (*del));
 }

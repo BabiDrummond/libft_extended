@@ -17,16 +17,16 @@ SRCS = char/ft_isalnum.c	\
 	io/ft_putendl_fd.c		\
 	io/ft_putnbr_fd.c		\
 	io/ft_putstr_fd.c		\
-	lst/ft_lstadd_back.c	\
-	lst/ft_lstadd_front.c	\
-	lst/ft_lstclear.c		\
-	lst/ft_lstdelone.c		\
-	lst/ft_lstiter.c		\
-	lst/ft_lstlast.c		\
-	lst/ft_lstmap.c			\
-	lst/ft_lstnew.c			\
-	lst/ft_lstsize.c		\
+	lst/lst_add_back.c		\
+	lst/lst_add_front.c		\
+	lst/lst_clear.c			\
 	lst/lst_del_front.c		\
+	lst/lst_del_node.c		\
+	lst/lst_iter.c			\
+	lst/lst_last.c			\
+	lst/lst_map.c			\
+	lst/lst_new.c			\
+	lst/lst_size.c			\
 	math/count_digits_ul.c	\
 	math/count_digits.c		\
 	math/ft_atoi.c			\
@@ -41,10 +41,10 @@ SRCS = char/ft_isalnum.c	\
 	mem/ft_memset.c			\
 	printf/ft_printf.c		\
 	printf/ft_put.c			\
-	sort/bubble_sort_arr.c	\
-	sort/bubble_sort_lst.c	\
-	sort/insertion_sort_arr.c \
-	sort/selection_sort_arr.c \
+	sort/bubble_arr.c		\
+	sort/bubble_lst.c		\
+	sort/insertion_arr.c 	\
+	sort/selection_arr.c 	\
 	str/ft_split.c			\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bubble_sort_lst.c                                  :+:      :+:    :+:   */
+/*   bubble_lst.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 00:48:10 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 01:44:37 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:52:57 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	cmp_str(void *a, void *b)
 	return (ft_strncmp((char *)a, (char *)b, ft_strlen((char *)a)) > 0);
 }
 
-void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *))
+void	bubble_lst(t_list *head, int (*cmp)(void *, void *))
 {
 	t_list	*curr;
 	void	*temp;
@@ -31,7 +31,7 @@ void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *))
 
 	if (!head)
 		return ;
-	size = ft_lstsize(head);
+	size = lst_size(head);
 	while (size--)
 	{
 		curr = head;
@@ -73,32 +73,32 @@ void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *))
 
 // int main(void)
 // {
-//     // Test with ints
+//  // Test with ints
 // 	t_list *head = NULL;
 // 	int vals[] = {9, 3, 1, 2, 4};
 // 	int i = 0;
 
 // 	while (i < 5)
-// 		ft_lstadd_back(&head, ft_lstnew(&vals[i++]));
+// 		lst_add_back(&head, lst_new(&vals[i++]));
 
 // 	printf("Before: ");
 // 	print_list_int(head);
-// 	bubble_sort_lst(head, cmp_int);
+// 	bubble_lst(head, cmp_int);
 // 	printf("After: ");
 // 	print_list_int(head);
 
-//     // Test with strings
-//     t_list *head2 = NULL;
-//     char *vals2[] = {"c", "b", "a", "e", "f"};
-//     int j = 0;
+//  // Test with strings
+//  t_list *head2 = NULL;
+//  char *vals2[] = {"c", "b", "a", "e", "f"};
+//  int j = 0;
 
 // 	while (j < 5)
-// 		ft_lstadd_back(&head2, ft_lstnew(vals2[j++]));
+// 		lst_add_back(&head2, lst_new(vals2[j++]));
 
-//     printf("Before: ");
+//  printf("Before: ");
 // 	print_list_str(head2);
 
-// 	bubble_sort_lst(head2, cmp_str);
+// 	bubble_lst(head2, cmp_str);
 
 //     printf("After: ");
 // 	print_list_str(head2);

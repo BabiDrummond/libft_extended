@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   selection_sort_arr.c                               :+:      :+:    :+:   */
+/*   selection_arr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 21:56:37 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 01:47:14 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:53:42 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	*selection_sort_arr(int *arr, int size)
+int	*selection_arr(int *arr, int size)
 {
 	int	i;
 	int	j;
@@ -42,7 +42,7 @@ int	*selection_sort_arr(int *arr, int size)
 // 	int size = 5;
 // 	int i = 0;
 // 	int *res = malloc(5 * sizeof(int));
-// 	res = selection_sort(tab, size);
+// 	res = selection_arr(tab, size);
 // 	while (i < size)       
 // 		printf("%d", res[i++]);
 // }

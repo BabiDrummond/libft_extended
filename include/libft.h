@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 03:44:38 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/02 17:54:25 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,16 +47,16 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 
 // List
+void	lst_add_back(t_list **lst, t_list *new);
+void	lst_add_front(t_list **lst, t_list *new);
+void	lst_clear(t_list **lst, void (*del)(void *));
 void	lst_del_front(t_list **head, void (*del)(void *));
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_lstclear(t_list **lst, void (*del)(void *));
-void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-t_list	*ft_lstnew(void *content);
+void	lst_del_node(t_list *lst, void (*del)(void *));
+void	lst_iter(t_list *lst, void (*f)(void *));
+int		lst_size(t_list *lst);
+t_list	*lst_last(t_list *lst);
+t_list	*lst_map(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list	*lst_new(void *content);
 
 // Math
 int		count_digits_ul(unsigned long n, int base);
@@ -85,10 +85,10 @@ int		ft_putul(unsigned long n, char *set, int base);
 int		ft_putptr(unsigned long p);
 
 // Sort
-int		*bubble_sort_arr(int *arr, int size);
-int		*insertion_sort_arr(int *arr, int size);
-int		*selection_sort_arr(int *arr, int size);
-void	bubble_sort_lst(t_list *head, int (*cmp)(void *, void *));
+int		*bubble_arr(int *arr, int size);
+int		*insertion_arr(int *arr, int size);
+int		*selection_arr(int *arr, int size);
+void	bubble_lst(t_list *head, int (*cmp)(void *, void *));
 
 // String
 char	**ft_split(const char *s, char c);
