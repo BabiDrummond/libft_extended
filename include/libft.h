@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 18:44:11 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:29:27 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ int		*selection_arr(int *arr, int size);
 void	bubble_lst(t_list *head, int (*cmp)(void *, void *));
 
 // String
+char	**ft_split_free(char **arr);
 char	**ft_split(const char *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);

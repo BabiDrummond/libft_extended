@@ -47,6 +47,7 @@ SRCS = char/ft_isalnum.c	\
 	sort/bubble_lst.c		\
 	sort/insertion_arr.c 	\
 	sort/selection_arr.c 	\
+	str/ft_split_free.c		\
 	str/ft_split.c			\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\
