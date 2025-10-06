@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_back.c                                     :+:      :+:    :+:   */
+/*   lst_print_int.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/02 19:20:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 16:18:01 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/06 18:39:49 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/06 18:41:18 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-void	lst_del_back(t_list **head, void (*del)(void *))
+void	lst_print_int(void *content)
 {
-	t_list	*temp;
-
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	while (temp->next->next)
-		temp = temp->next;
-	lst_del_node(temp->next, (*del));
-	temp->next = NULL;
+	ft_printf("%d", *(int *)content);
 }

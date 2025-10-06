@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:54:25 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/06 18:44:11 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,11 @@ void	ft_putstr_fd(char *s, int fd);
 void	lst_add_back(t_list **lst, t_list *new);
 void	lst_add_front(t_list **lst, t_list *new);
 void	lst_clear(t_list **lst, void (*del)(void *));
+void	lst_del_back(t_list **head, void (*del)(void *));
 void	lst_del_front(t_list **head, void (*del)(void *));
 void	lst_del_node(t_list *lst, void (*del)(void *));
 void	lst_iter(t_list *lst, void (*f)(void *));
+void	lst_print_int(void *content);
 int		lst_size(t_list *lst);
 t_list	*lst_last(t_list *lst);
 t_list	*lst_map(t_list *lst, void *(*f)(void *), void (*del)(void *));

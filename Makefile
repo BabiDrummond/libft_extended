@@ -20,12 +20,14 @@ SRCS = char/ft_isalnum.c	\
 	lst/lst_add_back.c		\
 	lst/lst_add_front.c		\
 	lst/lst_clear.c			\
+	lst/lst_del_back.c		\
 	lst/lst_del_front.c		\
 	lst/lst_del_node.c		\
 	lst/lst_iter.c			\
 	lst/lst_last.c			\
 	lst/lst_map.c			\
 	lst/lst_new.c			\
+	lst/lst_print_int.c		\
 	lst/lst_size.c			\
 	math/count_digits_ul.c	\
 	math/count_digits.c		\
