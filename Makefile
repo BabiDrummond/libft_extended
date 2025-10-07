@@ -32,6 +32,7 @@ SRCS = char/ft_isalnum.c	\
 	math/count_digits_ul.c	\
 	math/count_digits.c		\
 	math/ft_atoi.c			\
+	math/ft_atol.c			\
 	math/ft_itoa_base.c		\
 	math/ft_itoa.c			\
 	mem/ft_bzero.c			\

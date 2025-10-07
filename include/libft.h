@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 20:29:27 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/06 21:58:53 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
+# endif
+
+# ifndef INT_MAX
+# 	define INT_MAX 2147483647
+# endif
+
+# ifndef INT_MIN
+# 	define INT_MIN -2147483648
 # endif
 
 # include <stdlib.h>
@@ -64,6 +72,7 @@ t_list	*lst_new(void *content);
 int		count_digits_ul(unsigned long n, int base);
 int		count_digits(int n, int base);
 int		ft_atoi(const char *nptr);
+long	ft_atol(char *str);
 char	*ft_itoa_base(int n, int base, char *set);
 char	*ft_itoa(int n);
 

@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/27 21:47:33 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 21:58:09 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/06 21:56:16 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/06 21:56:56 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-char	*ft_itoa_base(int n, int base, char *set)
+long	ft_atol(char *str)
 {
-	char	*str;
-	int		digits;
+	long	num;
 	int		negative;
 
-	negative = 0;
-	digits = count_digits(n, base);
-	str = ft_calloc(digits + 1, sizeof(char));
-	if (n == INT_MIN)
-		return ((char *) ft_memcpy(str, "-2147483648", digits));
-	if (!str)
-		return (NULL);
-	if (n < 0)
+	num = 0;
+	negative = 1;
+	if (*str == '-' || *str == '+')
+		if (*str++ == '-')
+			negative *= -1;
+	while (*str)
 	{
-		n *= -1;
-		str[negative] = '-';
-		negative++;
+		if (!ft_isdigit(*str))
+			return ((long) INT_MAX + 1);
+		num = (num * 10) + *str++ - 48;
 	}
-	while (--digits >= 0)
-	{
-		str[digits] = set[n % base];
-		n /= base;
-	}
-	return (str);
+	return (num * negative);
 }
