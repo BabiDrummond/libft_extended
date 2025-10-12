@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:19:04 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:49:03 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/11 23:10:40 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	lst_clear(t_list **lst, void (*del)(void *))
 		lst_del_node(*lst, (*del));
 		*lst = next;
 	}
-	lst = NULL;
+	*lst = NULL;
 }
