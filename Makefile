@@ -44,6 +44,8 @@ SRCS = char/ft_isalnum.c	\
 	mem/ft_memset.c			\
 	printf/ft_printf.c		\
 	printf/ft_put.c			\
+	sort/cmp_int.c			\
+	sort/cmp_str.c			\
 	sort/bubble_arr.c		\
 	sort/bubble_lst.c		\
 	sort/insertion_arr.c 	\

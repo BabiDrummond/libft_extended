@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/11 23:29:30 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/12 00:24:13 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,8 @@ int		ft_putul(unsigned long n, char *set, int base);
 int		ft_putptr(unsigned long p);
 
 // Sort
+int		cmp_int(void *a, void *b);
+int		cmp_str(void *a, void *b);
 int		*bubble_arr(int *arr, int size);
 int		*insertion_arr(int *arr, int size);
 int		*selection_arr(int *arr, int size);
