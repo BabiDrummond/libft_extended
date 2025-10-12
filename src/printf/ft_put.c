@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 20:57:59 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:44:59 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/12 18:57:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ int	ft_put_n(int n, char *set, int base)
 {
 	int	digits;
 
-	if (n == -2147483648)
+	if (n == INT_MIN)
 		return (ft_put_s("-2147483648"));
-	digits = count_digits(n, base);
+	digits = ft_count_digits(n, base);
 	if (n < 0 && ft_putchr('-'))
 		n *= -1;
 	if (n / base)
@@ -49,7 +49,7 @@ int	ft_putul(unsigned long n, char *set, int base)
 	if (n / base)
 		ft_putul(n / base, set, base);
 	ft_putchr(set[n % base]);
-	return (count_digits_ul(n, base));
+	return (ft_count_digits_ul(n, base));
 }
 
 int	ft_putptr(unsigned long p)

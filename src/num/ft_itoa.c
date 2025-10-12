@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/27 21:47:33 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 21:58:09 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/14 18:17:32 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/12 19:06:19 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-char	*ft_itoa_base(int n, int base, char *set)
+char	*ft_itoa(int n)
 {
 	char	*str;
-	int		digits;
+	int		len;
 	int		negative;
 
 	negative = 0;
-	digits = count_digits(n, base);
-	str = ft_calloc(digits + 1, sizeof(char));
+	len = ft_count_digits(n, 10);
+	str = ft_calloc(len + 1, sizeof(char));
 	if (n == INT_MIN)
-		return ((char *) ft_memcpy(str, "-2147483648", digits));
+		return ((char *) ft_memcpy(str, "-2147483648", len));
 	if (!str)
 		return (NULL);
 	if (n < 0)
@@ -31,10 +31,18 @@ char	*ft_itoa_base(int n, int base, char *set)
 		str[negative] = '-';
 		negative++;
 	}
-	while (--digits >= 0)
+	while (--len >= negative)
 	{
-		str[digits] = set[n % base];
-		n /= base;
+		str[len] = n % 10 + 48;
+		n = n / 10;
 	}
 	return (str);
 }
+
+/*
+int main(void)
+{	
+	#include <stdio.h>
+	printf("%s\n", ft_itoa(2147483647));
+}
+*/

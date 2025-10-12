@@ -6,21 +6,13 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 21:02:58 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:44:56 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/12 19:05:45 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-int	check_case(char *set, char c)
-{
-	while (*set)
-		if (*set++ == c)
-			return (1);
-	return (0);
-}
-
-int	put_case(char c, va_list args)
+static int	put_case(char c, va_list args)
 {
 	if (c == 'c')
 		return (ft_putchr(va_arg(args, int)));
@@ -48,7 +40,7 @@ int	ft_printf(const char *s, ...)
 	count = 0;
 	while (*s)
 	{
-		if (*s == '%' && check_case("cspdiuxX", *++s))
+		if (*s == '%' && ft_strchr("cspdiuxX", *++s))
 			count += put_case(*s++, args);
 		else
 			count += ft_putchr(*s++);

@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/12 00:24:13 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/12 19:05:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,11 +68,11 @@ t_list	*lst_last(t_list *lst);
 t_list	*lst_map(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*lst_new(void *content);
 
-// Math
-int		count_digits_ul(unsigned long n, int base);
-int		count_digits(int n, int base);
-int		ft_atoi(const char *nptr);
+// Num
 long	ft_atol(char *str);
+int		ft_atoi(const char *nptr);
+int		ft_count_digits_ul(unsigned long n, int base);
+int		ft_count_digits(int n, int base);
 char	*ft_itoa_base(int n, int base, char *set);
 char	*ft_itoa(int n);
 
@@ -86,8 +86,6 @@ void	*ft_memset(void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // Printft
-int		check_case(char *set, char c);
-int		put_case(char c, va_list args);
 int		ft_printf(const char *s, ...);
 int		ft_putchr(int c);
 int		ft_put_s(char *s);

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   count_digits_ul.c                                  :+:      :+:    :+:   */
+/*   ft_count_digits_ul.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 18:16:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/30 03:14:59 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/12 18:57:10 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	count_digits_ul(unsigned long n, int base)
+int	ft_count_digits_ul(unsigned long n, int base)
 {
 	int	len;
 

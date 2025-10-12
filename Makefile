@@ -29,12 +29,6 @@ SRCS = char/ft_isalnum.c	\
 	lst/lst_new.c			\
 	lst/lst_print_int.c		\
 	lst/lst_size.c			\
-	math/count_digits_ul.c	\
-	math/count_digits.c		\
-	math/ft_atoi.c			\
-	math/ft_atol.c			\
-	math/ft_itoa_base.c		\
-	math/ft_itoa.c			\
 	mem/ft_bzero.c			\
 	mem/ft_calloc.c			\
 	mem/ft_memchr.c			\
@@ -42,10 +36,14 @@ SRCS = char/ft_isalnum.c	\
 	mem/ft_memcpy.c			\
 	mem/ft_memmove.c		\
 	mem/ft_memset.c			\
+	num/ft_atoi.c			\
+	num/ft_atol.c			\
+	num/ft_count_digits_ul.c \
+	num/ft_count_digits.c	\
+	num/ft_itoa_base.c		\
+	num/ft_itoa.c			\
 	printf/ft_printf.c		\
 	printf/ft_put.c			\
-	sort/cmp_int.c			\
-	sort/cmp_str.c			\
 	sort/bubble_arr.c		\
 	sort/bubble_lst.c		\
 	sort/insertion_arr.c 	\
