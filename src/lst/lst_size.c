@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:56:25 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:50:03 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/13 22:47:35 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/lst.h"
 
 int	lst_size(t_list *lst)
 {

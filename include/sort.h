@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   sort.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/13 22:42:26 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:50:20 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#ifndef SORT_H
+# define SORT_H
 
-void	lst_del_front(t_list **head, void (*del)(void *))
-{
-	t_list	*temp;
+# include "ft_types.h"
 
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
-}
+int		cmp_int(void *a, void *b);
+int		cmp_str(void *a, void *b);
+int		*bubble_arr(int *arr, int size);
+int		*insertion_arr(int *arr, int size);
+int		*selection_arr(int *arr, int size);
+void	bubble_lst(t_list *head, int (*cmp)(void *, void *));
+
+#endif

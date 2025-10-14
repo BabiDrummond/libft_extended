@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:20:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 16:18:01 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/13 22:47:57 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/lst.h"
 
 void	lst_del_back(t_list **head, void (*del)(void *))
 {

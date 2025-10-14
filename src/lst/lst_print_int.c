@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 18:39:49 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/11 23:29:23 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/13 22:47:29 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/lst.h"
 
 void	lst_print_int(t_list *head)
 {

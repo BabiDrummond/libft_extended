@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   char.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/13 22:30:38 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:32:26 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#ifndef CHAR_H
+# define CHAR_H
 
-void	lst_del_front(t_list **head, void (*del)(void *))
-{
-	t_list	*temp;
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+int		ft_isspace(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
-}
+#endif

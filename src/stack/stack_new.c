@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   stack_new.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/19 14:39:14 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:18:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "../../include/stack.h"
 
-void	lst_del_front(t_list **head, void (*del)(void *))
+t_stack	*stack_new(int number)
 {
-	t_list	*temp;
+	t_stack	*node;
 
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
+	node = malloc(sizeof(t_stack));
+	if (!node)
+		return (NULL);
+	node->number = number;
+	node->next = NULL;
+	return (node);
 }

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   gnl.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/13 22:32:41 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:52:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#ifndef GNL_H
+# define GNL_H
 
-void	lst_del_front(t_list **head, void (*del)(void *))
-{
-	t_list	*temp;
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
 
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
-}
+static size_t	gnl_strchr(char *s, char c);
+static char	    *read_buffer(char *buffer, int fd);
+static char	    *read_line(char *buffer, char **line);
+char	        *get_next_line(int fd);
+
+#endif

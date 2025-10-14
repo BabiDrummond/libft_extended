@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   stack_map.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/19 17:53:12 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 21:56:07 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "../../include/stack.h"
 
-void	lst_del_front(t_list **head, void (*del)(void *))
+t_stack	*stack_map(t_stack *stack, void *(*f)(int), void (*del)(int))
 {
-	t_list	*temp;
+	t_stack	*top;
+	t_stack	*node;
 
-	if (!head || !*head)
-		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
+	if (!stack || !f || !del)
+		return (NULL);
+	top = NULL;
+	while (stack)
+	{
+		node = stack_new((*f)(stack->number));
+		if (!node)
+		{
+			stack_clear(&top, (*del));
+			return (NULL);
+		}
+		stack_add_back(&top, node);
+		stack = stack->next;
+	}
+	return (top);
 }

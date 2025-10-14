@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:53:12 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:49:49 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/13 22:47:39 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/lst.h"
 
 t_list	*lst_map(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

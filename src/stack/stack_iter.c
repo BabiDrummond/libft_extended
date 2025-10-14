@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   stack_iter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/19 17:10:25 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:18:33 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "../../include/stack.h"
 
-void	lst_del_front(t_list **head, void (*del)(void *))
+void	stack_iter(t_stack *stack, void (*f)(int))
 {
-	t_list	*temp;
-
-	if (!head || !*head)
+	if (!stack || !f)
 		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
+	while (stack)
+	{
+		(*f)(stack->number);
+		stack = stack->next;
+	}
 }

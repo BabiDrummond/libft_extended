@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_del_front.c                                    :+:      :+:    :+:   */
+/*   stack_clear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:55 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/19 17:19:04 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/13 22:18:22 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "../../include/stack.h"
 
-void	lst_del_front(t_list **head, void (*del)(void *))
+void	stack_clear(t_stack **top, void (*del)(int))
 {
-	t_list	*temp;
+	t_stack	*next;
 
-	if (!head || !*head)
+	if (!top || !del || !*top)
 		return ;
-	temp = *head;
-	*head = (*head)->next;
-	lst_del_node(temp, (*del));
+	while (*top)
+	{
+		next = (*top)->next;
+		stack_del_node(*top, (*del));
+		*top = next;
+	}
+	*top = NULL;
 }
