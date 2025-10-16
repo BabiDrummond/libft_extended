@@ -6,13 +6,13 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 00:48:10 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 22:58:30 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/16 00:21:00 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_bubble_sort(t_stack **top)
+void	stack_bubble_sort(t_stack *top)
 {
 	t_stack	*curr;
 	int		temp;
@@ -21,10 +21,10 @@ void	stack_bubble_sort(t_stack **top)
 
 	if (!top)
 		return ;
-	size = stack_size(*top);
+	size = stack_size(top);
 	while (size--)
 	{
-		curr = *top;
+		curr = top;
 		swapped = 0;
 		while (curr->next)
 		{
