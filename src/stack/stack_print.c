@@ -12,7 +12,7 @@
 
 #include "../../include/stack.h"
 
-void	stack_print_int(t_stack *top)
+void	stack_print(t_stack *top)
 {
 	while(top)
 	{

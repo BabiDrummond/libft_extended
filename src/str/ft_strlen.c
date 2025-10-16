@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:02:41 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:48:16 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:51 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 size_t	ft_strlen(const char *s)
 {

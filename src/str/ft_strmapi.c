@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:52:18 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 19:14:35 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:57 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {

@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:11:29 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 19:14:25 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:39 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

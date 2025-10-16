@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 18:17:32 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/12 19:06:19 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:56:45 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/num.h"
 
 char	*ft_itoa(int n)
 {

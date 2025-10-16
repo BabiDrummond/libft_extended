@@ -6,13 +6,14 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:15 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:01 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:48:03 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LST_H
 # define LST_H
 
+# include <stdlib.h>
 # include "ft_types.h"
 # include "printf.h"
 

@@ -48,6 +48,18 @@ SRCS = char/ft_isalnum.c	\
 	sort/bubble_lst.c		\
 	sort/insertion_arr.c 	\
 	sort/selection_arr.c 	\
+	stack/stack_add_back.c	\
+	stack/stack_add_front.c	\
+	stack/stack_clear.c		\
+	stack/stack_del_back.c	\
+	stack/stack_del_front.c	\
+	stack/stack_del_node.c	\
+	stack/stack_iter.c		\
+	stack/stack_last.c		\
+	stack/stack_map.c		\
+	stack/stack_new.c		\
+	stack/stack_print.c		\
+	stack/stack_size.c		\
 	str/ft_split_free.c		\
 	str/ft_split.c			\
 	str/ft_strchr.c			\

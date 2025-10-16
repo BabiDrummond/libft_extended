@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 20:57:59 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/12 18:57:49 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:58:05 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/printf.h"
 
 int	ft_putchr(int c)
 {

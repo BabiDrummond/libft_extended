@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:26 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:50:20 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:07:08 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define SORT_H
 
 # include "ft_types.h"
+# include "lst.h"
+# include "str.h"
 
 int		cmp_int(void *a, void *b);
 int		cmp_str(void *a, void *b);

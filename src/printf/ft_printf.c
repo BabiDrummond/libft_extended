@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 21:02:58 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/12 19:05:45 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:58:00 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/printf.h"
 
 static int	put_case(char c, va_list args)
 {

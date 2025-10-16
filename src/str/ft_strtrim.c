@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:54:01 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 21:52:36 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:04:13 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

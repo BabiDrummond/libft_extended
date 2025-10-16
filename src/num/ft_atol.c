@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 21:56:16 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 21:56:56 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:55:02 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/num.h"
 
 long	ft_atol(char *str)
 {

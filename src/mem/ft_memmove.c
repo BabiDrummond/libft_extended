@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 01:48:38 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:38:23 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 19:54:27 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/mem.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

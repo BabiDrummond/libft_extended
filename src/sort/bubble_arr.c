@@ -6,11 +6,9 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 21:31:08 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:51:13 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:06:22 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "../../include/libft.h"
 
 int	*bubble_arr(int *arr, int size)
 {

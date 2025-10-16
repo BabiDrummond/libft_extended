@@ -6,12 +6,15 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:18 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:49:03 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:01:25 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MEM_H
 # define MEM_H
+
+# include <unistd.h>
+# include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);

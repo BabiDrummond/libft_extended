@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:24:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:48:11 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:46 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

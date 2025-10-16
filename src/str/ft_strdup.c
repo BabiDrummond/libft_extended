@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 06:46:05 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 18:46:53 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:30 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 char	*ft_strdup(const char *s)
 {

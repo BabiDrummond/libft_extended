@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 18:21:44 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/06 20:11:44 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 20:03:23 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/libft.h"
+#include "../../include/str.h"
 
 static int	word_len(const char *s, char c)
 {
