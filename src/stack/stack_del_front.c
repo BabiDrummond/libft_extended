@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack_pop.c                                        :+:      :+:    :+:   */
+/*   stack_del_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:19:15 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 23:37:37 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_del_front(t_stack **top, void (*del)(int))
+void	stack_del_front(t_stack **top, void (*del)(void *))
 {
 	t_stack	*temp;
 

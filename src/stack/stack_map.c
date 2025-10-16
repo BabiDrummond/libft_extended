@@ -12,7 +12,7 @@
 
 #include "../../include/stack.h"
 
-t_stack	*stack_map(t_stack *stack, int (*f)(int), void (*del)(int))
+t_stack	*stack_map(t_stack *stack, int (*f)(int), void (*del)(void *))
 {
 	t_stack	*top;
 	t_stack	*node;

@@ -6,13 +6,13 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:20:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:18:26 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 23:37:34 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_del_back(t_stack **top, void (*del)(int))
+void	stack_del_back(t_stack **top, void (*del)(void *))
 {
 	t_stack	*temp;
 
