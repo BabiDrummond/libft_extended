@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:19:08 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 22:31:47 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:52:42 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include "ft_types.h"
 # include "printf.h"
 
+void	stack_bubble_sort(t_stack **top);
 void	stack_add_back(t_stack **top, t_stack *new);
 void	stack_add_front(t_stack **top, t_stack *new);
 void	stack_clear(t_stack **top, void (*del)(int));

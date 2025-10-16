@@ -19,6 +19,7 @@ SRCS = char/ft_isalnum.c	\
 	io/ft_putstr_fd.c		\
 	lst/lst_add_back.c		\
 	lst/lst_add_front.c		\
+	lst/lst_bubble_sort.c	\
 	lst/lst_clear.c			\
 	lst/lst_del_back.c		\
 	lst/lst_del_front.c		\
@@ -44,12 +45,12 @@ SRCS = char/ft_isalnum.c	\
 	num/ft_itoa.c			\
 	printf/ft_printf.c		\
 	printf/ft_put.c			\
-	sort/bubble_arr.c		\
-	sort/bubble_lst.c		\
-	sort/insertion_arr.c 	\
-	sort/selection_arr.c 	\
+	sort/bubble_sort.c		\
+	sort/insertion_sort.c 	\
+	sort/selection_sort.c 	\
 	stack/stack_add_back.c	\
 	stack/stack_add_front.c	\
+	stack/stack_bubble_sort.c \
 	stack/stack_clear.c		\
 	stack/stack_del_back.c	\
 	stack/stack_del_front.c	\

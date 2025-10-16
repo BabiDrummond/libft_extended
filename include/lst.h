@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:15 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:48:03 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:56:58 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include "ft_types.h"
 # include "printf.h"
 
+int		cmp_int(void *a, void *b);
+int		cmp_str(void *a, void *b);
+void	lst_bubble_sort(t_list *head, int (*cmp)(void *, void *));
 void	lst_add_back(t_list **lst, t_list *new);
 void	lst_add_front(t_list **lst, t_list *new);
 void	lst_clear(t_list **lst, void (*del)(void *));

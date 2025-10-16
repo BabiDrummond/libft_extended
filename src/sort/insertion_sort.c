@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   insertion_arr.c                                    :+:      :+:    :+:   */
+/*   insertion_sort.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 22:03:32 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/02 17:53:31 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:49:18 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	*insertion_arr(int *arr, int size)
+int	*insertion_sort(int *arr, int size)
 {
 	int	temp;
 	int	i;
@@ -38,7 +38,7 @@ int	*insertion_arr(int *arr, int size)
 // 	int size = 5;
 // 	int i = 0;
 // 	int *res = malloc(5 * sizeof(int));
-// 	res = insertion_arr(tab, size);
+// 	res = insertion_sort(tab, size);
 // 	while (i < size)       
 // 		printf("%d", res[i++]);
 // }

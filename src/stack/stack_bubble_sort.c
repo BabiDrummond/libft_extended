@@ -1,48 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bubble_lst.c                                       :+:      :+:    :+:   */
+/*   stack_bubble_sort.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 00:48:10 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:06:09 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:58:30 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/sort.h"
+#include "../../include/stack.h"
 
-int	cmp_int(void *a, void *b)
+void	stack_bubble_sort(t_stack **top)
 {
-	return (*(int *)a > *(int *)b);
-}
-
-int	cmp_str(void *a, void *b)
-{
-	return (ft_strncmp((char *)a, (char *)b, ft_strlen((char *)a)) > 0);
-}
-
-void	bubble_lst(t_list *head, int (*cmp)(void *, void *))
-{
-	t_list	*curr;
-	void	*temp;
+	t_stack	*curr;
+	int		temp;
 	int		size;
 	int		swapped;
 
-	if (!head)
+	if (!top)
 		return ;
-	size = lst_size(head);
+	size = stack_size(*top);
 	while (size--)
 	{
-		curr = head;
+		curr = *top;
 		swapped = 0;
 		while (curr->next)
 		{
-			if (cmp(curr->content, curr->next->content) && ++swapped)
+			if ((curr->number > curr->next->number) && ++swapped)
 			{
-				temp = curr->content;
-				curr->content = curr->next->content;
-				curr->next->content = temp;
+				temp = curr->number;
+				curr->number = curr->next->number;
+				curr->next->number = temp;
 			}
 			curr = curr->next;
 		}
@@ -51,22 +41,22 @@ void	bubble_lst(t_list *head, int (*cmp)(void *, void *))
 	}
 }
 
-// void	print_list_int(t_list *head)
+// void	print_stack_int(t_stack *node)
 // {
-// 	while(head)
+// 	while(node)
 // 	{
-// 		printf("%d", *(int *)head->content);
-// 		head = head->next;
+// 		printf("%d", *(int *)node->number);
+// 		node = node->next;
 // 	}
 // 	printf("\n");
 // }
 
-// void	print_list_str(t_list *head)
+// void	print_stack_str(t_stack *node)
 // {
-// 	while(head)
+// 	while(node)
 // 	{
-// 		printf("%s", (char *)head->content);
-// 		head = head->next;
+// 		printf("%s", (char *)node->number);
+// 		node = node->next;
 // 	}
 // 	printf("\n");
 // }
@@ -74,32 +64,32 @@ void	bubble_lst(t_list *head, int (*cmp)(void *, void *))
 // int main(void)
 // {
 //  // Test with ints
-// 	t_list *head = NULL;
+// 	t_stack *node = NULL;
 // 	int vals[] = {9, 3, 1, 2, 4};
 // 	int i = 0;
 
 // 	while (i < 5)
-// 		lst_add_back(&head, lst_new(&vals[i++]));
+// 		lst_add_back(&node, lst_new(&vals[i++]));
 
 // 	printf("Before: ");
-// 	print_list_int(head);
-// 	bubble_lst(head, cmp_int);
+// 	print_stack_int(node);
+// 	bubble_lst(node, cmp_int);
 // 	printf("After: ");
-// 	print_list_int(head);
+// 	print_stack_int(node);
 
 //  // Test with strings
-//  t_list *head2 = NULL;
+//  t_stack *node2 = NULL;
 //  char *vals2[] = {"c", "b", "a", "e", "f"};
 //  int j = 0;
 
 // 	while (j < 5)
-// 		lst_add_back(&head2, lst_new(vals2[j++]));
+// 		lst_add_back(&node2, lst_new(vals2[j++]));
 
 //  printf("Before: ");
-// 	print_list_str(head2);
+// 	print_stack_str(node2);
 
-// 	bubble_lst(head2, cmp_str);
+// 	bubble_lst(node2, cmp_str);
 
 //     printf("After: ");
-// 	print_list_str(head2);
+// 	print_stack_str(node2);
 // }

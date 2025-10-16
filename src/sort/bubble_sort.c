@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bubble_arr.c                                       :+:      :+:    :+:   */
+/*   bubble_sort.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/26 21:31:08 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:06:22 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:49:10 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	*bubble_arr(int *arr, int size)
+int	*bubble_sort(int *arr, int size)
 {
 	int	i;
 	int	j;
@@ -43,7 +43,7 @@ int	*bubble_arr(int *arr, int size)
 // 	int size = 5;
 // 	int i = 0;
 // 	int *res = malloc(5 * sizeof(int));
-// 	res = bubble_arr(tab, size);
+// 	res = bubble_sort(tab, size);
 // 	while (i < size)       
 // 		printf("%d", res[i++]);
 // }

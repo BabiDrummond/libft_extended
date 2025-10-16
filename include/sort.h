@@ -6,22 +6,15 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:26 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:07:08 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/15 22:50:54 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SORT_H
 # define SORT_H
 
-# include "ft_types.h"
-# include "lst.h"
-# include "str.h"
-
-int		cmp_int(void *a, void *b);
-int		cmp_str(void *a, void *b);
-int		*bubble_arr(int *arr, int size);
-int		*insertion_arr(int *arr, int size);
-int		*selection_arr(int *arr, int size);
-void	bubble_lst(t_list *head, int (*cmp)(void *, void *));
+int		*bubble_sort(int *arr, int size);
+int		*insertion_sort(int *arr, int size);
+int		*selection_sort(int *arr, int size);
 
 #endif
