@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   stack_del_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 02:12:40 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 23:37:37 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 01:54:30 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_del_front(t_stack **top, void (*del)(void *))
+void	stack_del_front(t_stack **top)
 {
 	t_stack	*temp;
 
@@ -20,5 +20,5 @@ void	stack_del_front(t_stack **top, void (*del)(void *))
 		return ;
 	temp = *top;
 	*top = (*top)->next;
-	stack_del_node(temp, (*del));
+	free(temp);
 }

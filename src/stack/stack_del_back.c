@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   stack_del_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:20:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 23:37:34 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 01:54:41 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_del_back(t_stack **top, void (*del)(void *))
+void	stack_del_back(t_stack **top)
 {
 	t_stack	*temp;
 
@@ -21,6 +21,6 @@ void	stack_del_back(t_stack **top, void (*del)(void *))
 	temp = *top;
 	while (temp->next->next)
 		temp = temp->next;
-	stack_del_node(temp->next, (*del));
+	free(temp->next);
 	temp->next = NULL;
 }

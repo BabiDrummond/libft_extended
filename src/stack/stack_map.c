@@ -12,12 +12,12 @@
 
 #include "../../include/stack.h"
 
-t_stack	*stack_map(t_stack *stack, int (*f)(int), void (*del)(void *))
+t_stack	*stack_map(t_stack *stack, int (*f)(int))
 {
 	t_stack	*top;
 	t_stack	*node;
 
-	if (!stack || !f || !del)
+	if (!stack || !f)
 		return (NULL);
 	top = NULL;
 	while (stack)
@@ -25,7 +25,7 @@ t_stack	*stack_map(t_stack *stack, int (*f)(int), void (*del)(void *))
 		node = stack_new((*f)(stack->number));
 		if (!node)
 		{
-			stack_clear(&top, (*del));
+			stack_clear(&top);
 			return (NULL);
 		}
 		stack_add_back(&top, node);

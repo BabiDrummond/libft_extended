@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lst_map.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:53:12 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:39 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 01:49:39 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*lst_map(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*head;
 	t_list	*node;
 
-	if (!lst || !f || !del)
+	if (!lst || !f)
 		return (NULL);
 	head = NULL;
 	while (lst)

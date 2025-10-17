@@ -54,7 +54,6 @@ SRCS = char/ft_isalnum.c	\
 	stack/stack_clear.c		\
 	stack/stack_del_back.c	\
 	stack/stack_del_front.c	\
-	stack/stack_del_node.c	\
 	stack/stack_iter.c		\
 	stack/stack_last.c		\
 	stack/stack_map.c		\

@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   stack_clear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:19:04 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 23:37:29 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 01:55:32 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/stack.h"
 
-void	stack_clear(t_stack **top, void (*del)(void *))
+void	stack_clear(t_stack **top)
 {
 	t_stack	*next;
 
-	if (!top || !del || !*top)
+	if (!top)
 		return ;
 	while (*top)
 	{
 		next = (*top)->next;
-		stack_del_node(*top, (*del));
+		free(*top);
 		*top = next;
 	}
 	*top = NULL;

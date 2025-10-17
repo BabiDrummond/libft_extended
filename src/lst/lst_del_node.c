@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lst_del_node.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:56:04 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:47:52 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 01:49:21 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	lst_del_node(t_list *lst, void (*del)(void *))
 {
-	if (!lst || !del)
+	if (!lst)
 		return ;
-	(*del)(lst->content);
+	if (del)
+		(*del)(lst->content);
 	free(lst);
 }
