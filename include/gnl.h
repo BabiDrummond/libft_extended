@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   gnl.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:32:41 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:50:43 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 02:25:24 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
 #  define BUFFER_SIZE 1
 # endif
 
-char	        *get_next_line(int fd);
+char	*get_next_line(int fd);
 
 #endif
