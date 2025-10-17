@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
+/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:29:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:51:25 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/17 02:05:51 by helios           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 # include "num.h"
 # include "printf.h"
 # include "sort.h"
-# include "stack.h"
 # include "str.h"
 
 #endif
