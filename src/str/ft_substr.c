@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:13:20 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:04:16 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:25:08 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {

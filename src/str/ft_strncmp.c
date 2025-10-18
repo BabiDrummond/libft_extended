@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 02:53:48 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:04:00 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:45 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 14:39:14 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:53:49 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:22:06 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "lst.h"
 
 t_list	*lst_new(void *content)
 {

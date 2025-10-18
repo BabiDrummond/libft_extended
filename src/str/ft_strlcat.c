@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 23:15:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:03:42 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:31 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

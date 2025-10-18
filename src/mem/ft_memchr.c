@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 03:48:24 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:54:19 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:22:32 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/mem.h"
+#include "mem.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

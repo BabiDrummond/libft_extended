@@ -1,6 +1,7 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
+INCLUDE = -I./include/
 
 SRCS_DIR = src/
 SRCS = char/ft_isalnum.c	\
@@ -70,11 +71,11 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
-	@echo -n "\033[0;32Generated libft.a\n"
+	@echo -n "\033[0;32mGenerated libft.a\n"
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	@mkdir -p $(dir $@)
-	@$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
 	@echo "\033[95mCompiling $(notdir $<)"
 
 clean:

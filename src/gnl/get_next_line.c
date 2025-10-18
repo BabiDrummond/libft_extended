@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/25 18:38:55 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:49:49 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:20:56 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/gnl.h"
+#include "gnl.h"
 
 static size_t	gnl_strchr(char *s, char c)
 {

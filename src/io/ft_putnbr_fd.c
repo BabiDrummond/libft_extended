@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 07:48:11 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:51:44 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:21:22 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/io.h"
+#include "io.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

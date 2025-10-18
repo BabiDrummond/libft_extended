@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 07:40:22 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:51:48 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:21:25 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/io.h"
+#include "io.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

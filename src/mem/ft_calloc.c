@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 06:30:14 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:54:16 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:22:30 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/mem.h"
+#include "mem.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

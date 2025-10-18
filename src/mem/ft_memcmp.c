@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 04:07:43 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:54:21 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:22:35 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/mem.h"
+#include "mem.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

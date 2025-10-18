@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 06:46:05 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:03:30 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:20 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 char	*ft_strdup(const char *s)
 {

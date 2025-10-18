@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 22:24:57 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:03:46 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:34 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

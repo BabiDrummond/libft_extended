@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 00:48:10 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 22:50:15 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:21:37 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "lst.h"
 
 int	cmp_int(void *a, void *b)
 {

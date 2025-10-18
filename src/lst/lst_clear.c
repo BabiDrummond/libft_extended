@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   lst_clear.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:19:04 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/17 01:48:57 by helios           ###   ########.fr       */
+/*   Updated: 2025/10/18 17:21:40 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/lst.h"
+#include "lst.h"
 
 void	lst_clear(t_list **lst, void (*del)(void *))
 {

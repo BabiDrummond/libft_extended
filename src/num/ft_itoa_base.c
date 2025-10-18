@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/27 21:47:33 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:56:08 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:23:33 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/num.h"
+#include "num.h"
 
 char	*ft_itoa_base(int n, int base, char *set)
 {

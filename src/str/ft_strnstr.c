@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 04:48:09 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:04:05 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

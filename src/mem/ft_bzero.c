@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 01:33:50 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:54:12 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:22:26 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/mem.h"
+#include "mem.h"
 
 void	ft_bzero(void *s, size_t n)
 {

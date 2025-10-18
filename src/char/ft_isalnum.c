@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 21:52:24 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/13 22:32:18 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:20:40 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/char.h"
+#include "char.h"
 
 int	ft_isalnum(int c)
 {

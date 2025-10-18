@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 05:31:35 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/17 02:16:31 by helios           ###   ########.fr       */
+/*   Updated: 2025/10/18 17:23:23 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/num.h"
+#include "num.h"
 
 int	ft_atoi(const char *nptr)
 {

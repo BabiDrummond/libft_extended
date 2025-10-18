@@ -6,11 +6,11 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 20:10:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:03:18 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:24:10 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/str.h"
+#include "str.h"
 
 char	**ft_split_free(char **arr)
 {
