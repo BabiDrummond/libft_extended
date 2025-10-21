@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_types.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:40:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/17 02:26:41 by helios           ###   ########.fr       */
+/*   Updated: 2025/10/20 23:04:25 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@
 
 # ifndef INT_MIN
 #  define INT_MIN -2147483648
+# endif
+
+# ifndef BYTE_SIZE
+#  define BYTE_SIZE 8
 # endif
 
 typedef struct s_list
