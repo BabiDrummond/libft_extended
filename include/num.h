@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:21 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/21 00:17:47 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/22 01:24:16 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include "ft_types.h"
 # include "mem.h"
 
-long	ft_atol(char *str);
 int		ft_atoi(const char *nptr);
 int		ft_count_digits_bin(unsigned int num);
 int		ft_count_digits_ul(unsigned long n, int base);
