@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split_free.c                                    :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 20:10:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/23 18:51:25 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/10/23 18:01:07 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/10/23 18:34:15 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "mem.h"
 
-char	**ft_split_free(char **arr)
+int	ft_free(char **ptr)
 {
-	int	i;
-
-	i = 0;
-	if (!arr || !*arr)
-		return (NULL);
-	while (arr[i])
-		free(arr[i++]);
-	free(arr);
-	return (NULL);
+	if (ptr && *ptr)
+	{
+		free(*ptr);
+		*ptr = NULL;
+	}
+	return (0);
 }

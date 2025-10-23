@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:11:29 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/22 21:19:14 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/10/23 18:32:40 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,22 @@ char	*ft_strjoin_free(char *s1, char *s2)
 	int		i;
 	int		j;
 
-	i = -1;
+	i = 0;
 	j = 0;
 	if (!s1 && !s2)
 		return (NULL);
 	new = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
 	if (!new)
-		return (free(s1), free(s2), NULL);
-	while (s1 && s1[++i])
+		return (ft_free(&s1), ft_free(&s2), NULL);
+	while (s1 && s1[i])
+	{
 		new[i] = s1[i];
+		i++;
+	}
 	while (s2 && s2[j])
 		new[i++] = s2[j++];
-	free(s1);
-	free(s2);
+	ft_free(&s1);
+	ft_free(&s2);
 	return (new);
 }
 
