@@ -30,6 +30,9 @@ SRCS = char/ft_isalnum.c	\
 	lst/lst_new.c			\
 	lst/lst_print_int.c		\
 	lst/lst_size.c			\
+	matrix/ft_matrix_dup.c	\
+	matrix/ft_matrix_len.c	\
+	matrix/ft_matrix_print.c \
 	mem/ft_free.c			\
 	mem/ft_bzero.c			\
 	mem/ft_calloc.c			\
