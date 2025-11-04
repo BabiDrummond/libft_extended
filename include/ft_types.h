@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:40:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/20 23:04:25 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/11/03 21:22:45 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,22 @@
 
 # ifndef BYTE_SIZE
 #  define BYTE_SIZE 8
+# endif
+
+# ifndef EXIT_SUCCESS
+#  define EXIT_SUCCESS 0
+# endif
+
+# ifndef EXIT_FAILURE
+#  define EXIT_FAILURE 1
+# endif
+
+# ifndef TRUE
+#  define TRUE 1
+# endif
+
+# ifndef FALSE
+#  define FALSE 0
 # endif
 
 typedef struct s_list
