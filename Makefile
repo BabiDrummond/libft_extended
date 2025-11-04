@@ -31,6 +31,7 @@ SRCS = char/ft_isalnum.c	\
 	lst/lst_print_int.c		\
 	lst/lst_size.c			\
 	matrix/ft_matrix_dup.c	\
+	matrix/ft_matrix_free.c	\
 	matrix/ft_matrix_len.c	\
 	matrix/ft_matrix_print.c \
 	mem/ft_free.c			\
@@ -52,7 +53,6 @@ SRCS = char/ft_isalnum.c	\
 	sort/bubble_sort.c		\
 	sort/insertion_sort.c 	\
 	sort/selection_sort.c 	\
-	str/ft_split_free.c		\
 	str/ft_split.c			\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\

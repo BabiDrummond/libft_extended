@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:05:40 by bmoreira         ###   ########.fr       */
+/*   Updated: 2025/11/04 20:48:29 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include "mem.h"
 
-char	**ft_split_free(char **arr);
 char	**ft_split(const char *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);

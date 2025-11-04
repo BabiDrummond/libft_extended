@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split_free.c                                    :+:      :+:    :+:   */
+/*   ft_matrix_free.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/06 20:10:46 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/23 18:51:25 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/11/04 20:43:14 by bmoreira          #+#    #+#             */
+/*   Updated: 2025/11/04 20:43:58 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "matrix.h"
 
-char	**ft_split_free(char **arr)
+char	**ft_matrix_free(char **matrix)
 {
 	int	i;
 
 	i = 0;
-	if (!arr || !*arr)
+	if (!matrix || !*matrix)
 		return (NULL);
-	while (arr[i])
-		free(arr[i++]);
-	free(arr);
+	while (matrix[i])
+		free(matrix[i++]);
+	free(matrix);
 	return (NULL);
 }
