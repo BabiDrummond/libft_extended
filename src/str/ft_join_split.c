@@ -6,13 +6,13 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 23:58:49 by bmoreira          #+#    #+#             */
-/*   Updated: 2026/02/08 01:12:48 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/08 01:31:20 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "str.h"
 
-char	*ft_reverse_split(char **split, char c)
+char	*ft_join_split(char **split, char *separator)
 {
 	char	*tmp;
 	char	*str;
@@ -30,7 +30,7 @@ char	*ft_reverse_split(char **split, char c)
 		if (i < size - 1)
 		{
 			tmp = str;
-			str = ft_strjoin(str, &c);
+			str = ft_strjoin(str, separator);
 			ft_free(&tmp);
 		}
 		i++;

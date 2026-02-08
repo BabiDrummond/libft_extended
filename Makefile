@@ -53,7 +53,7 @@ SRCS = char/ft_isalnum.c	\
 	sort/bubble_sort.c		\
 	sort/insertion_sort.c 	\
 	sort/selection_sort.c 	\
-	str/ft_reverse_split.c	\
+	str/ft_join_split.c		\
 	str/ft_split_free.c		\
 	str/ft_split_size.c		\
 	str/ft_split.c			\
