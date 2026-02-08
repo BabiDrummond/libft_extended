@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 04:48:09 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/18 17:24:49 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/08 02:03:38 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!*little)
+	if (!big || !len)
+		return (NULL);
+	if (!little)
 		return ((char *)(big));
 	while (len-- && big[i])
 	{
