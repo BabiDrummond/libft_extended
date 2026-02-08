@@ -6,20 +6,22 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 23:58:49 by bmoreira          #+#    #+#             */
-/*   Updated: 2026/02/08 00:43:17 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/08 01:12:48 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "str.h"
 
-char	*ft_reverse_split(char **split, int size, char c)
+char	*ft_reverse_split(char **split, char c)
 {
 	char	*tmp;
 	char	*str;
+	int		size;
 	int		i;
 
 	i = 0;
 	str = ft_strdup("");
+	size = ft_split_size(split);
 	while (i < size)
 	{
 		tmp = str;

@@ -55,7 +55,7 @@ SRCS = char/ft_isalnum.c	\
 	sort/selection_sort.c 	\
 	str/ft_reverse_split.c	\
 	str/ft_split_free.c		\
-	str/ft_split_len.c		\
+	str/ft_split_size.c		\
 	str/ft_split.c			\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\
