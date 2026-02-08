@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/11/04 20:52:58 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/08 00:43:45 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include "matrix.h"
 # include "mem.h"
 
+char	*ft_reverse_split(char **split, int size, char c);
+char	**ft_split_free(char **split);
 char	**ft_split(const char *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
