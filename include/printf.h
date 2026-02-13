@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:23 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 20:02:42 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/12 21:08:47 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define PRINTF_H
 
 # include <stdarg.h>
-# include "ft_types.h"
+# include "types.h"
 # include "io.h"
 # include "num.h"
 # include "str.h"

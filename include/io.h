@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:41:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/15 19:52:56 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/12 21:08:29 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define IO_H
 
 # include <unistd.h>
-# include "ft_types.h"
+# include "types.h"
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);

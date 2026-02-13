@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:21 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/22 01:24:16 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/12 21:08:44 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <unistd.h>
 # include "char.h"
-# include "ft_types.h"
+# include "types.h"
 # include "mem.h"
 
 int		ft_atoi(const char *nptr);

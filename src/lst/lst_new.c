@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 14:39:14 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/18 17:22:06 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/12 21:09:17 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_list	*lst_new(void *content)
 	if (!node)
 		return (NULL);
 	node->content = content;
+	node->prev = NULL;
 	node->next = NULL;
 	return (node);
 }
