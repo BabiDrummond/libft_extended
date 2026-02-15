@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:12:58 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:30 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/14 21:20:29 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 void	lst_add_back(t_list **lst, t_list *new)
 {
-	if (!lst && !new)
+	t_list	*last;
+
+	if (!lst || !new)
 		return ;
 	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
-	lst_last(*lst)->next = new;
+	last = lst_last(*lst);
+	last->next = new;
+	new->prev = last;
 }
