@@ -6,23 +6,23 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:19:04 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:40 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/19 16:53:10 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lst.h"
 
-void	lst_clear(t_list **lst, void (*del)(void *))
+void	lst_clear(t_list **head, void (*del)(void *))
 {
 	t_list	*next;
 
-	if (!lst)
+	if (!head)
 		return ;
-	while (*lst)
+	while (*head)
 	{
-		next = (*lst)->next;
-		lst_del_node(*lst, (*del));
-		*lst = next;
+		next = (*head)->next;
+		lst_clear_node(*head, (*del));
+		*head = next;
 	}
-	*lst = NULL;
+	*head = NULL;
 }

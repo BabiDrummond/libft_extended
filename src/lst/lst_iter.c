@@ -6,19 +6,19 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:10:25 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/18 17:21:56 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/19 16:55:30 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lst.h"
 
-void	lst_iter(t_list *lst, void (*f)(void *))
+void	lst_iter(t_list *node, void (*f)(void *))
 {
-	if (!lst || !f)
+	if (!node || !f)
 		return ;
-	while (lst)
+	while (node)
 	{
-		(*f)(lst->content);
-		lst = lst->next;
+		(*f)(node->content);
+		node = node->next;
 	}
 }

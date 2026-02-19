@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst_size.c                                         :+:      :+:    :+:   */
+/*   lst_clear_node.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/19 15:56:25 by bmoreira          #+#    #+#             */
-/*   Updated: 2026/02/19 16:54:26 by bmoreira         ###   ########.fr       */
+/*   Created: 2025/07/19 16:56:04 by bmoreira          #+#    #+#             */
+/*   Updated: 2026/02/19 16:52:51 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lst.h"
 
-int	lst_size(t_list *head)
+void	lst_clear_node(t_list *node, void (*del)(void *))
 {
-	int	len;
-
-	len = 0;
-	while (head && ++len)
-		head = head->next;
-	return (len);
+	if (!node)
+		return ;
+	if (del)
+		(*del)(node->content);
+	free(node);
 }

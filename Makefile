@@ -20,6 +20,7 @@ SRCS = char/ft_isalnum.c	\
 	lst/lst_add_back.c		\
 	lst/lst_add_front.c		\
 	lst/lst_bubble_sort.c	\
+	lst/lst_clear_node.c	\
 	lst/lst_clear.c			\
 	lst/lst_del_back.c		\
 	lst/lst_del_front.c		\
