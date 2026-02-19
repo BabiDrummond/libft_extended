@@ -61,8 +61,9 @@ SRCS = char/ft_isalnum.c	\
 	str/ft_strchr.c			\
 	str/ft_strdup.c			\
 	str/ft_striteri.c		\
-	str/ft_strjoin_free.c	\
 	str/ft_strjoin.c		\
+	str/ft_strjoin_free.c	\
+	str/ft_triple_join.c	\
 	str/ft_strlcat.c		\
 	str/ft_strlcpy.c		\
 	str/ft_strlen.c			\
