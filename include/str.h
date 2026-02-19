@@ -6,7 +6,7 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:42:31 by bmoreira          #+#    #+#             */
-/*   Updated: 2026/02/19 17:50:48 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/19 18:00:28 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include "mem.h"
 # include "types.h"
 
-int     ft_split_size(char **split);
+int		ft_split_size(char **split);
 char	*ft_join_split(char **split, char *separator);
 char	**ft_split_free(char **split);
 char	**ft_split(const char *s, char c);
