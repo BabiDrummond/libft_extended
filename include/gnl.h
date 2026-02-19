@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   gnl.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: helios <helios@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 22:32:41 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/17 02:25:24 by helios           ###   ########.fr       */
+/*   Updated: 2026/02/19 17:51:27 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include "str.h"
+# include "types.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1

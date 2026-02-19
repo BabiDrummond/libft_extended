@@ -6,13 +6,13 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:11:29 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/10/23 18:32:40 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/19 17:43:07 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "str.h"
 
-char	*ft_strjoin_free(char *s1, char *s2)
+char	*ft_strjoin_free(char *s1, char *s2, int free_s1, int free_s2)
 {
 	char	*new;
 	int		i;
@@ -32,8 +32,10 @@ char	*ft_strjoin_free(char *s1, char *s2)
 	}
 	while (s2 && s2[j])
 		new[i++] = s2[j++];
-	ft_free(&s1);
-	ft_free(&s2);
+	if (free_s1)
+		ft_free(&s1);
+	if (free_s2)
+		ft_free(&s2);
 	return (new);
 }
 
