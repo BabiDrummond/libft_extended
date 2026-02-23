@@ -6,12 +6,14 @@
 /*   By: bmoreira <bmoreira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 02:16:44 by bmoreira          #+#    #+#             */
-/*   Updated: 2025/09/27 19:00:25 by bmoreira         ###   ########.fr       */
+/*   Updated: 2026/02/23 03:06:49 by bmoreira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *s, int c)
 {
+	if (!s)
+		return (0);
 	while (*s)
 		if (*s++ == (char) c)
 			return ((char *)--s);
